@@ -41,16 +41,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['new_name'])) {
     <meta charset="UTF-8">
     <title>Portal de Administración</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
         h1 { color: #333; }
         ul { list-style-type: none; padding: 0; }
         li { margin: 10px 0; }
         a { text-decoration: none; color: #007bff; }
         a:hover { text-decoration: underline; }
+        img { width: 300px; height: auto; margin-bottom: 20px; }
     </style>
 </head>
 <body>
     <h1>Bienvenido al Portal de Administración</h1>
+
+    <!-- Aquí agregamos la imagen del caballo -->
+    <img src="caballo.png"     style="max-width: 100%; height: auto;">
+
+
     <p>Elija una opción:</p>
     <ul>
         <li><a href="view_names.php">Ver Nombres Almacenados</a></li>
